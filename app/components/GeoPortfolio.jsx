@@ -843,7 +843,7 @@ export default function GeoPortfolio() {
                     ))}
                   </div>
 
-                  {Object.keys(project.links).length > 0 && (
+                  {Object.keys(project.links || {}).length > 0 && (
                     <div style={{ display: "flex", gap: 16, marginBottom: 6 }}
                       onClick={e => e.stopPropagation()}
                     >
