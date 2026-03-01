@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Justin Guthrie — GeoPortfolio',
+  title: 'Justin Guthrie | GeoPortfolio',
   description: 'GIS, GeoAI, and infrastructure resilience research portfolio',
 };
 
