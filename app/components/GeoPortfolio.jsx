@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect, useRef } from "react";
 
 // ── Hand-drawn Maine landscape SVG ──────────────────────────────────────
