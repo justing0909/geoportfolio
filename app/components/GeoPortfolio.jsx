@@ -753,7 +753,7 @@ export default function GeoPortfolio() {
               embeddings to power grids to rail networks, my work maps the 
               interdependencies that traditional analysis misses. Currently a GIS Specialist 
               at <a href="https://enodia.us" target="_blank" rel="noopener" className="footer-link" style={{ fontSize: "inherit" }}>Enodia</a> and 
-              Research Associate at Northeastern University's Sustainability and Data Sciences Lab.
+              Research Associate at Northeastern University's <a href="https://sdslab.io" target="_blank" rel="noopener" className="footer-link" style={{ fontSize: "inherit" }}>Sustainability and Data Sciences Lab</a>.
             </p>
 
             <div className={`hero-links ${loaded ? "fade-up delay-5" : ""}`} style={{
