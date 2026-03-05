@@ -118,7 +118,7 @@ const CompassRose = ({ size = 32, style }) => (
 );
 
 const CoordLabel = ({ lat, lon, label, note }) => (
-  <div style={{
+  <div className="coord-label" style={{
     fontFamily: "'IBM Plex Mono', monospace",
     fontSize: "0.7rem",
     color: "#7a6b55",
@@ -197,25 +197,15 @@ const researchThemes = [
     description: "Making sense of how foundation models encode planetary information — opening the black box of satellite embeddings to understand what machines see when they look at Earth.",
     projects: [
       {
-        title: "\"What on Earth is Google AlphaEarth?\" Written Publication",
-        role: "Co-Author",
-        org: "Universidad Católica de Manizales & Northeastern University",
-        year: "2025",
-        summary: "Investigating interpretability of Google DeepMind's 64-dimensional AlphaEarth satellite embeddings — identifying which dimensions are most predictive for ESA WorldCover land cover classification. Built a full-stack interactive dashboard (React/TypeScript, Python/Polars) for exploring 130K+ experimental records.",
-        tags: ["GeoAI", "Foundation Models", "Remote Sensing", "Earth Observation", "React/TypeScript", "Python/Polars"],
-        coord: { lat: "5.0601°N", lon: "-75.4874°W", label: "Manizales, Colombia", note: "partner institution" },
-        status: "Preprint in preparation · Targeted submission in March 2026",
-      },
-      {
-        title: "\"What on Earth is Google AlphaEarth?\" Interactive Dashboard",
+        title: "What on Earth is Google AlphaEarth?",
         role: "Lead Developer & Co-Author",
-        org: "Universidad Católica de Manizales & Northeastern University",
+        org: "Sustainability Data Sciences Lab, Northeastern University",
         year: "2025",
-        summary: "Investigating interpretability of Google DeepMind's 64-dimensional AlphaEarth satellite embeddings — identifying which dimensions are most predictive for ESA WorldCover land cover classification. Built a full-stack interactive dashboard (React/TypeScript, Python/Polars) for exploring 130K+ experimental records.",
-        tags: ["GeoAI", "Foundation Models", "Remote Sensing", "Earth Observation", "React/TypeScript", "Python/Polars"],
+        summary: "Investigating interpretability of Google DeepMind's 64-dimensional AlphaEarth satellite embeddings — identifying which dimensions are most predictive for ESA WorldCover land cover classification. Built a full-stack interactive dashboard (React/TypeScript, Python/Polars) for exploring 100K+ experimental records.",
+        tags: ["GeoAI", "Foundation Models", "React/TypeScript", "Python/Polars", "Data Visualization"],
         links: { live: "https://alpha-earth-viz.vercel.app", doi: "https://doi.org/10.5281/zenodo.17728053", github: "https://github.com/justing0909/AlphaEarth_Viz" },
-        coord: { lat: "5.0601°N", lon: "-75.4874°W", label: "Manizales, Colombia", note: "partner institution" },
-        status: "Software published on Zenodo",
+        coord: { lat: "42.3398°N", lon: "71.0892°W", label: "Boston, MA", note: "research base" },
+        status: "Paper in preparation · Software published on Zenodo",
         preview: { type: "embed", hint: "Interactive dashboard" },
       },
       {
@@ -247,7 +237,7 @@ const researchThemes = [
         summary: "Animated simulations in ArcGIS Online demonstrating how hurricane scenarios propagate through coupled power and water networks. Identified single-point-of-failure chokepoints where one circuit loss cascades into water supply disruption, school power outage, and residential service loss. Completed NSF I-Corps Spark Program; conducted customer discovery with Maine municipalities.",
         tags: ["ArcGIS Online", "Network Analysis", "Cascading Failures", "Customer Discovery", "NSF I-Corps"],
         links: {},
-        coord: { lat: "43.6614°N", lon: "70.2580°W", label: "Portland, ME", note: "incubator location" },
+        coord: { lat: "47.3566°N", lon: "68.3709°W", label: "Madawaska, ME", note: "case study subject" },
         status: "Active — proprietary methodology",
         preview: { type: "image", hint: "Animated simulation still" },
       },
@@ -259,7 +249,7 @@ const researchThemes = [
         summary: "Developed geodatabase of 300+ U.S. shipyards and repair facilities with 10+ analytical attributes per site. Built interactive ArcGIS Dashboard for internal stakeholder use; managed geospatial data sharing across 20+ users. Cleaned and visualized social capital investment data across U.S. metropolitan areas.",
         tags: ["ArcGIS Pro", "Geodatabase", "Dashboard Design", "Defense"],
         links: {},
-        coord: { lat: "42.3398°N", lon: "71.0892°W", label: "Boston, MA", note: "institution location" },
+        coord: { lat: "43.0803°N", lon: "70.7394°W", label: "Portsmouth Naval Shipyard, ME/NH", note: "regional context" },
         status: "Active",
         preview: null,
       },
@@ -271,7 +261,7 @@ const researchThemes = [
         summary: "Modeling betweenness-centrality on the Amtrak network as a subgraph of U.S. freight rail to optimize service extensions under budget constraints — maximizing both population served and resilience to weather extremes. Contributed data engineering, initial GIS visualization, and network condensation.",
         tags: ["Network Science", "Betweenness Centrality", "Transportation", "Python", "GIS"],
         links: {},
-        coord: { lat: "38.8951°N", lon: "77.0364°W", label: "Washington, D.C.", note: "initial AGU presentation location" },
+        coord: { lat: "38.8951°N", lon: "77.0364°W", label: "Washington, D.C.", note: "Amtrak network hub" },
         status: "Research ongoing",
         preview: { type: "image", hint: "Network visualization" },
       },
@@ -313,8 +303,8 @@ const researchThemes = [
         role: "Undergraduate Research Assistant",
         org: "Global Resilience Institute, Northeastern University",
         year: "2025",
-        summary: "Collected baseline resilience indicators (transportation, public safety, urbanism) for three communities in St. Thomas, USVI using the I-RES methodology. Created animated population migration timeline from U.S. Census data. Developed StoryMaps for Caribbean infrastructure challenges in Coulibistrie, Dominica, and Crab Hill, Barbados. Assisted planning collaborative sessions integrating local stakeholder input into resilience assessments.",
-        tags: ["StoryMaps", "Census Data", "Community Engagement", "I-RES", "Social Capital", "Community Resilience", "Social Resilience"],
+        summary: "Collected baseline resilience indicators (transportation, public safety, urbanism) for three communities in St. Thomas, USVI using the I-RES methodology. Created animated population migration timeline from U.S. Census data. Developed StoryMaps for Caribbean infrastructure challenges. Assisted planning collaborative sessions integrating local stakeholder input into resilience assessments.",
+        tags: ["StoryMaps", "Census Data", "Community Engagement", "I-RES"],
         links: {},
         coord: { lat: "18.3358°N", lon: "64.9307°W", label: "St. Thomas, USVI", note: "field site" },
         status: "Completed",
@@ -358,7 +348,16 @@ export default function GeoPortfolio() {
 
   useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 100);
-    const handleScroll = () => setScrollY(window.scrollY);
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setScrollY(window.scrollY);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => { clearTimeout(timer); window.removeEventListener("scroll", handleScroll); };
   }, []);
@@ -594,12 +593,63 @@ export default function GeoPortfolio() {
           color: var(--accent-amber);
           border-bottom-color: var(--accent-amber);
         }
+
+        /* ── Responsive: Tablet (768px and below) ─── */
+        @media (max-width: 768px) {
+          .nav-links { gap: 16px !important; }
+          .nav-link { font-size: 0.85rem; }
+          .hero-section { padding: 0 6vw !important; }
+          .hero-inner { flex-direction: column !important; }
+          .hero-text { max-width: 100% !important; flex: 1 1 100% !important; }
+          .hero-landscape { display: none !important; }
+          .section-padding { padding-left: 6vw !important; padding-right: 6vw !important; }
+          .project-card { padding: 22px 20px 18px !important; }
+          .footer-grid {
+            flex-direction: column !important;
+            gap: 40px !important;
+          }
+          .footer-contact {
+            text-align: left !important;
+            align-items: flex-start !important;
+          }
+          .footer-contact > div {
+            align-items: flex-start !important;
+          }
+          .card-header {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 6px !important;
+          }
+          .card-meta {
+            align-self: flex-start !important;
+          }
+        }
+
+        /* ── Responsive: Mobile (480px and below) ─── */
+        @media (max-width: 480px) {
+          .nav-bar { padding: 12px 20px !important; }
+          .nav-links { display: none !important; }
+          .hero-section {
+            padding: 0 5vw !important;
+            min-height: 90vh !important;
+          }
+          .section-padding {
+            padding-left: 5vw !important;
+            padding-right: 5vw !important;
+            padding-top: 60px !important;
+            padding-bottom: 60px !important;
+          }
+          .project-card { padding: 18px 16px 14px !important; }
+          .hero-links { gap: 16px !important; }
+          .scroll-indicator { display: none !important; }
+          .coord-label { flex-wrap: wrap; }
+        }
       `}</style>
 
       <div className="grain-overlay" />
 
       {/* ── Navigation ─────────────────────────────────── */}
-      <nav style={{
+      <nav className="nav-bar" style={{
         position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
         padding: "16px 40px",
         display: "flex", justifyContent: "space-between", alignItems: "center",
@@ -620,7 +670,7 @@ export default function GeoPortfolio() {
             J. Guthrie
           </span>
         </div>
-        <div style={{ display: "flex", gap: 28 }}>
+        <div className="nav-links" style={{ display: "flex", gap: 28 }}>
           {[
             { label: "Work", id: "work" },
             { label: "Instruments", id: "instruments" },
@@ -639,19 +689,19 @@ export default function GeoPortfolio() {
       </nav>
 
       {/* ── Hero ─────────────────────────────────────────── */}
-      <header style={{
+      <header className="hero-section" style={{
         minHeight: "100vh", display: "flex", flexDirection: "column",
         justifyContent: "center", padding: "0 10vw",
         position: "relative", overflow: "hidden",
       }}>
         <ContourBackground />
-        <div style={{
+        <div className="hero-inner" style={{
           position: "relative", zIndex: 1,
           display: "flex", justifyContent: "space-between", alignItems: "center",
           gap: 40, flexWrap: "wrap",
         }}>
           {/* Left: text content */}
-          <div style={{ maxWidth: 600, flex: "1 1 400px" }}>
+          <div className="hero-text" style={{ maxWidth: 600, flex: "1 1 400px" }}>
             {/* PhD banner */}
             <div className={loaded ? "fade-up" : ""} style={{
               fontFamily: "'IBM Plex Mono', monospace", fontSize: "0.62rem",
@@ -700,14 +750,14 @@ export default function GeoPortfolio() {
               Research Associate at Northeastern University's Sustainability Data Sciences Lab.
             </p>
 
-            <div className={loaded ? "fade-up delay-5" : ""} style={{
+            <div className={`hero-links ${loaded ? "fade-up delay-5" : ""}`} style={{
               display: "flex", gap: 24, marginTop: 32, flexWrap: "wrap",
             }}>
               {[
                 { label: "GitHub", href: "https://github.com/justing0909" },
                 { label: "ORCID", href: "https://orcid.org/0009-0009-9133-6135" },
                 { label: "LinkedIn", href: "https://linkedin.com/in/justinmguthrie" },
-                { label: "CV", href: "/Justin_Guthrie_CV.pdf" },
+                { label: "CV", href: "#" },
               ].map(link => (
                 <a key={link.label} href={link.href} target="_blank" rel="noopener" className="hero-ext-link">
                   {link.label}
@@ -717,7 +767,7 @@ export default function GeoPortfolio() {
           </div>
 
           {/* Right: hand-sketched Maine landscape */}
-          <div className={loaded ? "fade-in delay-5" : ""} style={{
+          <div className={`hero-landscape ${loaded ? "fade-in delay-5" : ""}`} style={{
             flex: "0 1 480px", display: "flex", justifyContent: "center",
             alignItems: "center", minWidth: 340,
           }}>
@@ -726,7 +776,7 @@ export default function GeoPortfolio() {
         </div>
 
         {/* Scroll indicator */}
-        <div className={loaded ? "fade-in delay-6" : ""} style={{
+        <div className={`scroll-indicator ${loaded ? "fade-in delay-6" : ""}`} style={{
           position: "absolute", bottom: 36, left: "50%", transform: "translateX(-50%)",
           display: "flex", flexDirection: "column", alignItems: "center", gap: 8,
         }}>
@@ -743,7 +793,7 @@ export default function GeoPortfolio() {
       </header>
 
       {/* ── Work Section ─────────────────────────────────── */}
-      <section id="work" style={{ padding: "100px 10vw", position: "relative", zIndex: 1 }}>
+      <section id="work" className="section-padding" style={{ padding: "100px 10vw", position: "relative", zIndex: 1 }}>
         <div style={{ textAlign: "center", marginBottom: 60 }}>
           <h2 style={{
             fontFamily: "'EB Garamond', serif", fontSize: "2rem", fontWeight: 500,
@@ -792,7 +842,7 @@ export default function GeoPortfolio() {
                   onClick={() => project.preview && setExpandedCard(isExpanded ? null : cardKey)}
                   style={{ cursor: project.preview ? "pointer" : "default" }}
                 >
-                  <div style={{
+                  <div className="card-header" style={{
                     display: "flex", justifyContent: "space-between", alignItems: "flex-start",
                     flexWrap: "wrap", gap: 8, marginBottom: 12,
                   }}>
@@ -807,7 +857,7 @@ export default function GeoPortfolio() {
                         {project.role} · {project.org}
                       </div>
                     </div>
-                    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                    <div className="card-meta" style={{ display: "flex", alignItems: "center", gap: 10 }}>
                       <span style={{
                         fontFamily: "'IBM Plex Mono', monospace", fontSize: "0.68rem",
                         color: "var(--text-dim)",
@@ -843,7 +893,7 @@ export default function GeoPortfolio() {
                     ))}
                   </div>
 
-                  {Object.keys(project.links || {}).length > 0 && (
+                  {Object.keys(project.links).length > 0 && (
                     <div style={{ display: "flex", gap: 16, marginBottom: 6 }}
                       onClick={e => e.stopPropagation()}
                     >
@@ -919,6 +969,7 @@ export default function GeoPortfolio() {
                             <iframe
                               src={project.links.live}
                               title={project.title}
+                              loading="lazy"
                               style={{
                                 width: "100%", height: 360, border: "none",
                                 borderRadius: 2, display: "block",
@@ -1017,7 +1068,7 @@ export default function GeoPortfolio() {
       </section>
 
       {/* ── Instruments Section ────────────────────────────── */}
-      <section id="instruments" style={{
+      <section id="instruments" className="section-padding" style={{
         padding: "80px 10vw", position: "relative", zIndex: 1,
         borderTop: "1px solid var(--border-subtle)",
       }}>
@@ -1071,7 +1122,7 @@ export default function GeoPortfolio() {
       </section>
 
       {/* ── Trajectory Section ─────────────────────────────── */}
-      <section id="trajectory" style={{
+      <section id="trajectory" className="section-padding" style={{
         padding: "80px 10vw", position: "relative", zIndex: 1,
         borderTop: "1px solid var(--border-subtle)",
       }}>
@@ -1123,11 +1174,11 @@ export default function GeoPortfolio() {
       </section>
 
       {/* ── About / Footer ─────────────────────────────────── */}
-      <footer id="about" style={{
+      <footer id="about" className="section-padding" style={{
         padding: "80px 10vw 60px", position: "relative", zIndex: 1,
         borderTop: "1px solid var(--border-subtle)",
       }}>
-        <div style={{
+        <div className="footer-grid" style={{
           display: "flex", justifyContent: "space-between",
           gap: 80, flexWrap: "wrap",
         }}>
@@ -1150,7 +1201,7 @@ export default function GeoPortfolio() {
           </div>
 
           {/* Contact - right aligned */}
-          <div style={{ flex: "0 0 auto", textAlign: "right" }}>
+          <div className="footer-contact" style={{ flex: "0 0 auto", textAlign: "right" }}>
             <h2 style={{
               fontFamily: "'EB Garamond', serif", fontSize: "1.4rem", fontWeight: 500,
               color: "var(--text-parchment)", marginBottom: 16,
