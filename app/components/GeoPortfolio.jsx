@@ -203,7 +203,11 @@ const researchThemes = [
         year: "2025",
         summary: "Investigating interpretability of Google DeepMind's 64-dimensional AlphaEarth satellite embeddings — identifying which dimensions are most predictive for ESA WorldCover land cover classification. Built a full-stack interactive dashboard (React/TypeScript, Python/Polars) for exploring 100K+ experimental records.",
         tags: ["GeoAI", "Foundation Models", "React/TypeScript", "Python/Polars", "Data Visualization"],
-        links: { live: "https://alpha-earth-viz.vercel.app", doi: "https://doi.org/10.5281/zenodo.17728053", github: "https://github.com/justing0909/AlphaEarth_Viz" },
+        links: [
+            { label: "Live App", href: "https://alpha-earth-viz.vercel.app" },
+            { label: "DOI", href: "https://doi.org/10.5281/zenodo.17728053" },
+            { label: "Source", href: "https://github.com/justing0909/AlphaEarth_Viz" },
+          ],
         coord: { lat: "42.3398°N", lon: "71.0892°W", label: "Boston, MA", note: "research base" },
         status: "Paper in preparation · Software published on Zenodo",
         preview: { type: "embed", hint: "Interactive dashboard" },
@@ -215,7 +219,7 @@ const researchThemes = [
         year: "2025",
         summary: "Updated three chapters from their 2017 publication: 'Climate Extremes and Informing Adaptation,' 'Informing Climate Adaptation with Earth System Models and Big Data,' and 'Climate Adaptation, Introduction.'",
         tags: ["Climate Science", "Technical Writing", "Literature Review"],
-        links: {},
+        links: [],
         coord: { lat: "42.3398°N", lon: "71.0892°W", label: "Boston, MA", note: "research base" },
         status: "Revisions contributed",
         preview: null,
@@ -236,7 +240,7 @@ const researchThemes = [
         year: "2025–Present",
         summary: "Animated simulations in ArcGIS Online demonstrating how hurricane scenarios propagate through coupled power and water networks. Identified single-point-of-failure chokepoints where one circuit loss cascades into water supply disruption, school power outage, and residential service loss. Completed NSF I-Corps Spark Program; conducted customer discovery with Maine municipalities.",
         tags: ["ArcGIS Online", "Network Analysis", "Cascading Failures", "Customer Discovery", "NSF I-Corps"],
-        links: {},
+        links: [],
         coord: { lat: "43.6667°N", lon: "70.2500°W", label: "Portland, ME", note: "case study subject" },
         status: "Active — proprietary methodology",
         preview: { type: "image", hint: "Animated simulation still" },
@@ -248,7 +252,7 @@ const researchThemes = [
         year: "2025–Present",
         summary: "Developed geodatabase of 300+ U.S. shipyards and repair facilities with 10+ analytical attributes per site. Built interactive ArcGIS Dashboard for internal stakeholder use; managed geospatial data sharing across 20+ users. Cleaned and visualized social capital investment data across U.S. metropolitan areas.",
         tags: ["ArcGIS Pro", "Geodatabase", "Dashboard Design", "Defense"],
-        links: {},
+        links: [],
         coord: { lat: "42.3398°N", lon: "71.0892°W", label: "Boston, MA", note: "research base" },
         status: "Active",
         preview: null,
@@ -260,7 +264,7 @@ const researchThemes = [
         year: "2025",
         summary: "Modeling betweenness-centrality on the Amtrak network as a subgraph of U.S. freight rail to optimize service extensions under budget constraints — maximizing both population served and resilience to weather extremes. Contributed data engineering, initial GIS visualization, and network condensation.",
         tags: ["Network Science", "Betweenness Centrality", "Transportation", "Python", "GIS"],
-        links: {},
+        links: [],
         coord: { lat: "38.8951°N", lon: "77.0364°W", label: "Washington, D.C.", note: "Amtrak network hub" },
         status: "Research ongoing",
         preview: { type: "image", hint: "Network visualization" },
@@ -272,7 +276,7 @@ const researchThemes = [
         year: "2023",
         summary: "Enhanced real-time Python data pipeline in Azure for track change handling across the MBTA Commuter Rail, cross-referencing Amtrak and MBTA schedules. Implemented NetworkX graph model using Dijkstra's algorithm; established framework for South Coast Rail integration. Improved scheduling accuracy for 81K+ daily passengers via XML transformations across 135 stations.",
         tags: ["NetworkX", "Python", "Azure", "Real-Time Data", "XML"],
-        links: {},
+        links: [],
         coord: { lat: "42.3519°N", lon: "71.0552°W", label: "South Station, Boston", note: "network terminus" },
         status: "Completed",
         preview: null,
@@ -293,7 +297,7 @@ const researchThemes = [
         year: "2024–2025",
         summary: "Led planning and execution of GIS Day 2024 — coordinated speakers, catering, logistics, and served as master of ceremonies. Increased attendance four-fold. Returned as featured speaker at GIS Day 2025 presenting AlphaEarth research.",
         tags: ["Event Planning", "Community Building", "GIS Advocacy", "Public Speaking"],
-        links: {live: "https://cssh.northeastern.edu/nulab/fall-2025-gis-day/"},
+        links: { label: "NULab Feature", href: "https://cssh.northeastern.edu/nulab/fall-2025-gis-day/" },
         coord: { lat: "42.3398°N", lon: "71.0892°W", label: "Northeastern University, Boston", note: "event venue" },
         status: "Completed",
         preview: { type: "image", hint: "Event photos" },
@@ -305,7 +309,9 @@ const researchThemes = [
         year: "2025",
         summary: "Collected baseline resilience indicators (transportation, public safety, urbanism) for three communities in St. Thomas, USVI using the I-RES methodology. Created animated population migration timeline from U.S. Census data. Developed StoryMaps for Caribbean infrastructure challenges. Assisted planning collaborative sessions integrating local stakeholder input into resilience assessments.",
         tags: ["StoryMaps", "Census Data", "Community Engagement", "I-RES"],
-        links: {live: "https://storymaps.arcgis.com/stories/1b49c1a74cab42b8b7897044cf8501d2", live: "https://storymaps.arcgis.com/stories/d0081be96ae64e3d8a01f27e9c5214f9", live: "https://storymaps.arcgis.com/stories/6dccd4993a1d4b01a07fd4628ce84c71"},
+        links: [{ label: "Coulibistrie, Dominica StoryMap", href: "https://storymaps.arcgis.com/stories/1b49c1a74cab42b8b7897044cf8501d2" },
+                { label: "Crab Hill, Barbados StoryMap", href: "https://storymaps.arcgis.com/stories/d0081be96ae64e3d8a01f27e9c5214f9" },
+                { label: "Pile Bay, Barbados StoryMap", href: "https://storymaps.arcgis.com/stories/6dccd4993a1d4b01a07fd4628ce84c71" }],
         coord: { lat: "18.3358°N", lon: "64.9307°W", label: "St. Thomas, USVI", note: "field site" },
         status: "Completed",
         preview: { type: "image", hint: "StoryMap & population timeline" },
@@ -317,7 +323,7 @@ const researchThemes = [
         year: "2024",
         summary: "Created 3D panorama tour of Porto Novo, Benin for the African Built Heritage Hub using 3DVista. Processed LiDAR point cloud data into mesh layers for urban-scale 3D models in ArcGIS Online.",
         tags: ["3DVista", "LiDAR", "Point Clouds", "ArcGIS Online", "Digital Heritage"],
-        links: {live: "https://african-built-heritage-nu.hub.arcgis.com/"},
+        links: [{ label: "African Built Heritage Digital Hub", href: "https://african-built-heritage-nu.hub.arcgis.com/" }],
         coord: { lat: "6.4969°N", lon: "2.6289°E", label: "Porto Novo, Benin", note: "subject location" },
         status: "Completed",
         preview: { type: "image", hint: "3D panorama & LiDAR model" },
@@ -893,19 +899,15 @@ export default function GeoPortfolio() {
                     ))}
                   </div>
 
-                  {Object.keys(project.links).length > 0 && (
-                    <div style={{ display: "flex", gap: 16, marginBottom: 6 }}
+                  {(project.links || []).length > 0 && (
+                    <div style={{ display: "flex", gap: 16, marginBottom: 6, flexWrap: "wrap" }}
                       onClick={e => e.stopPropagation()}
                     >
-                      {project.links.live && (
-                        <a href={project.links.live} target="_blank" rel="noopener" className="ext-link">↗ Live App</a>
-                      )}
-                      {project.links.github && (
-                        <a href={project.links.github} target="_blank" rel="noopener" className="ext-link">↗ Source</a>
-                      )}
-                      {project.links.doi && (
-                        <a href={project.links.doi} target="_blank" rel="noopener" className="ext-link">↗ DOI</a>
-                      )}
+                      {project.links.map((link, li) => (
+                        <a key={li} href={link.href} target="_blank" rel="noopener" className="ext-link">
+                          ↗ {link.label}
+                        </a>
+                      ))}
                     </div>
                   )}
 
@@ -967,7 +969,7 @@ export default function GeoPortfolio() {
                           /* Live embed (e.g. AlphaEarth dashboard) */
                           <div style={{ position: "relative" }}>
                             <iframe
-                              src={project.links.live}
+                              src={project.links.find(l => l.label === "Live App")?.href || project.links[0]?.href}
                               title={project.title}
                               loading="lazy"
                               style={{
