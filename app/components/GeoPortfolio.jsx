@@ -199,7 +199,7 @@ const researchThemes = [
       {
         title: "What on Earth is Google AlphaEarth?",
         role: "Lead Developer & Co-Author",
-        org: "Sustainability Data Sciences Lab, Northeastern University",
+        org: "Sustainability and Data Sciences Lab, Northeastern University",
         year: "2025",
         summary: "Investigating interpretability of Google DeepMind's 64-dimensional AlphaEarth satellite embeddings — identifying which dimensions are most predictive for ESA WorldCover land cover classification. Built a full-stack interactive dashboard (React/TypeScript, Python/Polars) for exploring 100K+ experimental records.",
         tags: ["GeoAI", "Foundation Models", "React/TypeScript", "Python/Polars", "Data Visualization"],
@@ -211,7 +211,7 @@ const researchThemes = [
       {
         title: "Encyclopedia of GIS — Chapter Revisions",
         role: "Contributing Researcher",
-        org: "Sustainability Data Sciences Lab, Northeastern University",
+        org: "Sustainability and Data Sciences Lab, Northeastern University",
         year: "2025",
         summary: "Updated three chapters from their 2017 publication: 'Climate Extremes and Informing Adaptation,' 'Informing Climate Adaptation with Earth System Models and Big Data,' and 'Climate Adaptation, Introduction.'",
         tags: ["Climate Science", "Technical Writing", "Literature Review"],
@@ -237,7 +237,7 @@ const researchThemes = [
         summary: "Animated simulations in ArcGIS Online demonstrating how hurricane scenarios propagate through coupled power and water networks. Identified single-point-of-failure chokepoints where one circuit loss cascades into water supply disruption, school power outage, and residential service loss. Completed NSF I-Corps Spark Program; conducted customer discovery with Maine municipalities.",
         tags: ["ArcGIS Online", "Network Analysis", "Cascading Failures", "Customer Discovery", "NSF I-Corps"],
         links: {},
-        coord: { lat: "47.3566°N", lon: "68.3709°W", label: "Madawaska, ME", note: "case study subject" },
+        coord: { lat: "43.6667°N", lon: "70.2500°W", label: "Portland, ME", note: "case study subject" },
         status: "Active — proprietary methodology",
         preview: { type: "image", hint: "Animated simulation still" },
       },
@@ -249,14 +249,14 @@ const researchThemes = [
         summary: "Developed geodatabase of 300+ U.S. shipyards and repair facilities with 10+ analytical attributes per site. Built interactive ArcGIS Dashboard for internal stakeholder use; managed geospatial data sharing across 20+ users. Cleaned and visualized social capital investment data across U.S. metropolitan areas.",
         tags: ["ArcGIS Pro", "Geodatabase", "Dashboard Design", "Defense"],
         links: {},
-        coord: { lat: "43.0803°N", lon: "70.7394°W", label: "Portsmouth Naval Shipyard, ME/NH", note: "regional context" },
+        coord: { lat: "42.3398°N", lon: "71.0892°W", label: "Boston, MA", note: "research base" },
         status: "Active",
         preview: null,
       },
       {
         title: "Rail Network Resilience Optimization",
         role: "Research Assistant",
-        org: "Sustainability Data Sciences Lab, Northeastern University",
+        org: "Sustainability and Data Sciences Lab, Northeastern University",
         year: "2025",
         summary: "Modeling betweenness-centrality on the Amtrak network as a subgraph of U.S. freight rail to optimize service extensions under budget constraints — maximizing both population served and resilience to weather extremes. Contributed data engineering, initial GIS visualization, and network condensation.",
         tags: ["Network Science", "Betweenness Centrality", "Transportation", "Python", "GIS"],
@@ -293,7 +293,7 @@ const researchThemes = [
         year: "2024–2025",
         summary: "Led planning and execution of GIS Day 2024 — coordinated speakers, catering, logistics, and served as master of ceremonies. Increased attendance four-fold. Returned as featured speaker at GIS Day 2025 presenting AlphaEarth research.",
         tags: ["Event Planning", "Community Building", "GIS Advocacy", "Public Speaking"],
-        links: {},
+        links: {live: "https://cssh.northeastern.edu/nulab/fall-2025-gis-day/"},
         coord: { lat: "42.3398°N", lon: "71.0892°W", label: "Northeastern University, Boston", note: "event venue" },
         status: "Completed",
         preview: { type: "image", hint: "Event photos" },
@@ -305,7 +305,7 @@ const researchThemes = [
         year: "2025",
         summary: "Collected baseline resilience indicators (transportation, public safety, urbanism) for three communities in St. Thomas, USVI using the I-RES methodology. Created animated population migration timeline from U.S. Census data. Developed StoryMaps for Caribbean infrastructure challenges. Assisted planning collaborative sessions integrating local stakeholder input into resilience assessments.",
         tags: ["StoryMaps", "Census Data", "Community Engagement", "I-RES"],
-        links: {},
+        links: {live: "https://storymaps.arcgis.com/stories/1b49c1a74cab42b8b7897044cf8501d2", live: "https://storymaps.arcgis.com/stories/d0081be96ae64e3d8a01f27e9c5214f9", live: "https://storymaps.arcgis.com/stories/6dccd4993a1d4b01a07fd4628ce84c71"},
         coord: { lat: "18.3358°N", lon: "64.9307°W", label: "St. Thomas, USVI", note: "field site" },
         status: "Completed",
         preview: { type: "image", hint: "StoryMap & population timeline" },
@@ -317,7 +317,7 @@ const researchThemes = [
         year: "2024",
         summary: "Created 3D panorama tour of Porto Novo, Benin for the African Built Heritage Hub using 3DVista. Processed LiDAR point cloud data into mesh layers for urban-scale 3D models in ArcGIS Online.",
         tags: ["3DVista", "LiDAR", "Point Clouds", "ArcGIS Online", "Digital Heritage"],
-        links: {},
+        links: {live: "https://african-built-heritage-nu.hub.arcgis.com/"},
         coord: { lat: "6.4969°N", lon: "2.6289°E", label: "Porto Novo, Benin", note: "subject location" },
         status: "Completed",
         preview: { type: "image", hint: "3D panorama & LiDAR model" },
@@ -747,7 +747,7 @@ export default function GeoPortfolio() {
               embeddings to power grids to rail networks, my work maps the 
               interdependencies that traditional analysis misses. Currently a GIS Specialist 
               at <a href="https://enodia.us" target="_blank" rel="noopener" className="footer-link" style={{ fontSize: "inherit" }}>Enodia</a> and 
-              Research Associate at Northeastern University's Sustainability Data Sciences Lab.
+              Research Associate at Northeastern University's Sustainability and Data Sciences Lab.
             </p>
 
             <div className={`hero-links ${loaded ? "fade-up delay-5" : ""}`} style={{
@@ -757,7 +757,7 @@ export default function GeoPortfolio() {
                 { label: "GitHub", href: "https://github.com/justing0909" },
                 { label: "ORCID", href: "https://orcid.org/0009-0009-9133-6135" },
                 { label: "LinkedIn", href: "https://linkedin.com/in/justinmguthrie" },
-                { label: "CV", href: "#" },
+                { label: "CV", href: "C:\\Users\\guthrie.j\\Downloads\\GeoPortfolio\\geoportfolio\\public\\Justin_Guthrie_CV.pdf" },
               ].map(link => (
                 <a key={link.label} href={link.href} target="_blank" rel="noopener" className="hero-ext-link">
                   {link.label}

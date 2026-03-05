@@ -20,10 +20,10 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-  title: 'Justin Guthrie — GeoPortfolio',
+  title: 'Justin Guthrie | GeoPortfolio',
   description: 'GIS, GeoAI, and infrastructure resilience research portfolio',
   openGraph: {
-    title: 'Justin Guthrie — GeoPortfolio',
+    title: 'Justin Guthrie | GeoPortfolio',
     description: 'Mapping what connects — and what breaks.',
     type: 'website',
   },
