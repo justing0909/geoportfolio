@@ -1193,12 +1193,12 @@ export default function GeoPortfolio() {
             </h2>
             <p style={{ fontSize: "0.94rem", color: "var(--text-muted)", lineHeight: 1.8, marginBottom: 12 }}>
               BSc in Data Science & Business Administration from Northeastern University (2025). 
-              Currently based in Maine, working at the intersection of GIS, machine learning, 
+              Currently based in Maine, working at the intersection of GIS, earth observation, machine learning, artificial intelligence, 
               and infrastructure resilience.
             </p>
             <p style={{ fontSize: "0.94rem", color: "var(--text-muted)", lineHeight: 1.8, marginBottom: 12 }}>
-              Eagle Scout. GIS Day organizer. Aspiring polyglot — currently learning 
-              French, Dutch, and Mandarin Chinese.
+              Eagle Scout. 2024 Northeastern University GIS Day organizer. Currently learning 
+              French, Dutch, and Mandarin Chinese. Lover of maps, music, and the outdoors. Persistent user of the Oxford comma.
             </p>
           </div>
 
@@ -1212,7 +1212,7 @@ export default function GeoPortfolio() {
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 10, alignItems: "flex-end" }}>
               {[
-                { label: "Email", value: "j.guthrie@northeastern.edu", href: "mailto:j.guthrie@northeastern.edu" },
+                { label: "Email", value: "j.guthrie[at]northeastern.edu" },
                 { label: "GitHub", value: "github.com/justing0909", href: "https://github.com/justing0909" },
                 { label: "LinkedIn", value: "justinmguthrie", href: "https://linkedin.com/in/justinmguthrie" },
                 { label: "ORCID", value: "0009-0009-9133-6135", href: "https://orcid.org/0009-0009-9133-6135" },
@@ -1244,7 +1244,7 @@ export default function GeoPortfolio() {
           color: "var(--text-dim)", letterSpacing: "0.1em",
         }}>
           <CompassRose size={16} style={{ display: "inline-block", verticalAlign: "middle", marginRight: 8, opacity: 0.35 }} />
-          Built with care in Maine · 2025
+          Built with care in Maine · 2026
         </div>
       </footer>
     </>
