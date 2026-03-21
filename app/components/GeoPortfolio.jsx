@@ -764,7 +764,7 @@ export default function GeoPortfolio() {
                 { label: "GitHub", href: "https://github.com/justing0909" },
                 { label: "ORCID", href: "https://orcid.org/0009-0009-9133-6135" },
                 { label: "LinkedIn", href: "https://linkedin.com/in/justinmguthrie" },
-                { label: "CV", href: "/Justin_Guthrie_CV.pdf" },
+                { label: "CV", href: "/JGuthrie_Resume_Mar2026.pdf" },
               ].map(link => (
                 <a key={link.label} href={link.href} target="_blank" rel="noopener" className="hero-ext-link">
                   {link.label}
